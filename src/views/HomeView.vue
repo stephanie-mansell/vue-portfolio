@@ -6,14 +6,16 @@
   </main>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-h1::selection {
-  background-color: #4bc0d9;
+  h1 {
+    &::selection {
+      background-color: #4bc0d9;
+    }
+  }
 }
 </style>

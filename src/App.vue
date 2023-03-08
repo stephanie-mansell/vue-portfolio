@@ -16,26 +16,25 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
+<style scoped lang="scss">
 .wrapper {
   display: grid;
-}
 
-nav {
-  justify-self: flex-end;
-}
+  nav {
+    justify-self: flex-end;
+    a.router-link-exact-active {
+      color: var(--color-text);
+    }
 
-nav a {
-  padding: 0 1rem;
-  font-weight: 500;
+    a.router-link-exact-active:hover {
+      background-color: transparent;
+    }
+
+    a {
+      padding: 0 1rem;
+      font-weight: 500;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
