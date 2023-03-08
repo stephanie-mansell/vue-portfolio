@@ -25,12 +25,17 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
-  padding: 0 1rem;
+.wrapper {
+  display: grid;
 }
 
-nav a:first-of-type {
-  border: 0;
+nav {
+  justify-self: flex-end;
+}
+
+nav a {
+  padding: 0 1rem;
+  font-weight: 500;
 }
 
 @media (min-width: 1024px) {

@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <main>fkedjf</main>
+  <main></main>
 </template>
