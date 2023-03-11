@@ -1,12 +1,17 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Logo from './components/Logo.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
+      <RouterLink to="/" class="logo-link">
+        <Logo />
+      </RouterLink>
       <nav>
         <RouterLink to="/">HOME</RouterLink>
+        <RouterLink to="/aboutme">ABOUT ME</RouterLink>
         <RouterLink to="/projects">PROJECTS</RouterLink>
         <RouterLink to="/contactme">CONTACT ME</RouterLink>
       </nav>
@@ -18,21 +23,26 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped lang="scss">
 .wrapper {
-  display: grid;
+  display: flex;
+  align-items: center;
+
+  .logo-link {
+    text-decoration: none;
+    color: white;
+    flex: 1;
+  }
 
   nav {
     justify-self: flex-end;
-    a.router-link-exact-active {
-      color: var(--color-text);
-    }
-
-    a.router-link-exact-active:hover {
-      background-color: transparent;
-    }
 
     a {
-      padding: 0 1rem;
-      font-weight: 500;
+      font-size: 18px;
+      margin-left: 2rem;
+      padding: 0 5px;
+      color: #4bc0d9;
+
+      text-transform: lowercase;
+      letter-spacing: 0.08rem;
     }
   }
 }
