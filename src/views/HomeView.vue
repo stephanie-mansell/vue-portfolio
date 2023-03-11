@@ -8,7 +8,7 @@
         <span class="underline">Software Developer</span>.
       </h1>
     </section>
-    <section class="image"><img src="/assets/ddsds.png" alt="" /></section>
+    <section class="image"><img src="/assets/yung-steph.png" alt="" /></section>
   </main>
 </template>
 
