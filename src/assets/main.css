@@ -14,8 +14,7 @@ main {
   flex: 1;
 }
 
-a,
-.green {
+nav a {
   text-decoration: none;
   color: #4bc0d9;
   transition: 0.4s;

@@ -1,5 +1,7 @@
 <script setup></script>
 
 <template>
-  <main>projects</main>
+  <main class="under-construction">
+    <h1>🚨 UNDER CONSTRUCTION 🚨</h1>
+  </main>
 </template>
